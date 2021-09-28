@@ -7,7 +7,7 @@ public abstract class Sorter {
     public class Pair {
         public int a, b;
 
-        Pair(int a, int b) {
+        private Pair(int a, int b) {
             this.a = a;
             this.b = b;
         }

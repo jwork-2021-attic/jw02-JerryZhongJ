@@ -9,14 +9,14 @@ import java.util.Collections;
 
 public class Scene {
     public static void main(String[] args) throws IOException {
-        Line line = new Line(256);
-        ArrayList<Integer> sequence = new ArrayList<Integer>(256);
-        for (int i = 0; i < 256; i++) {
+        Line line = new Line(64);
+        ArrayList<Integer> sequence = new ArrayList<Integer>(64);
+        for (int i = 0; i < 64; i++) {
             sequence.add(i);
         }
         Collections.shuffle(sequence);
-        for (int i = 0; i < 256; i++) {
-            line.put(new Goblin(i, i, i, i), sequence.get(i));
+        for (int i = 0; i < 64; i++) {
+            line.put(new Goblin(255, i * 4, i * 4, i), sequence.get(i));
         }
         Snake theSnake = Snake.getTheSnake();
         Sorter sorter = new QuickSorter();

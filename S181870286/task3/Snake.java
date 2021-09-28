@@ -54,7 +54,7 @@ public class Snake {
     }
 
     private void execute(Matrix matrix, Sorter.Pair step) {
-        matrix.get(step.a / 16, step.a % 16).swapPosition(matrix.get(step.b / 16, step.b % 16));
+        matrix.get(step.a / 8, step.a % 8).swapPosition(matrix.get(step.b / 8, step.b % 8));
     }
 
 }

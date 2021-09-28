@@ -24,4 +24,14 @@ Sorter的排序策略是通过字符串表示，解析之后才让Greezer执行�
 Line.toString()通过频繁对String采用拼接操作，而对字符串操作应该使用StringBuilder。
 
 
+## 任务二
+### 类图
+![](./uml/class2.png)
+### 可视化
+<https://asciinema.org/a/438496>
 
+## 任务三
+### 类图
+![](./uml/class3.png)
+### 可视化
+<https://asciinema.org/a/438498>
